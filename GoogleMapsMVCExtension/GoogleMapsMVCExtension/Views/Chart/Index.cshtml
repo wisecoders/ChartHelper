@@ -1,0 +1,20 @@
+﻿@model GoogleMapsMVCExtension.Models.ChartModel
+@using GoogleMapsMVCExtension.Helpers;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Google Chart MVC Extension Demo</title>
+</head>
+<body>
+    <h1>Google Chart MVC Extension Demo</h1>
+    @ChartHelper.DrawChart(Model, "PieChart", "divChart")
+    <div id="divChart"> 
+    </div>
+</body>
+</html>
